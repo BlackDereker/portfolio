@@ -27,7 +27,7 @@ const lines = [
   { text: 'Senior Software Engineer | Backend & Cloud Architecture | Go - Python - Applied AI/ML', size: 10, bold: true, gap: 14 },
   { text: 'Sao Paulo, SP, Brazil (Available for Remote, Hybrid, and Relocation opportunities)', size: 9, bold: false, gap: 12 },
   { text: 'Email: bgodoimachado@gmail.com | Phone / WhatsApp: +55 (11) 95657-2790', size: 9, bold: false, gap: 12 },
-  { text: 'LinkedIn: linkedin.com/in/brunagodoimachado | GitHub: github.com/brunagodoimachado', size: 9, bold: false, gap: 18 },
+  { text: 'Portfolio: brunagodoi.vercel.app | LinkedIn: linkedin.com/in/brunagodoimachado | GitHub: github.com/brunagodoimachado', size: 8.5, bold: false, gap: 18 },
 
   { text: 'PROFESSIONAL SUMMARY', size: 11, bold: true, gap: 14 },
   { text: 'Senior Software Engineer with 6+ years of experience architecting high-throughput, low-latency', size: 9, bold: false, gap: 11 },
