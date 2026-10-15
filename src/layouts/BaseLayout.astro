@@ -228,6 +228,12 @@ const speculationRules = {
     `}
     />
 
+    <!-- Vercel Web Analytics -->
+    <script>
+      import { inject } from '@vercel/analytics';
+      inject();
+    </script>
+
     <!-- Light-First Editorial Default (Optional Carbon Dark Mode) -->
     <script is:inline>
       (function () {
