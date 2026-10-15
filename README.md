@@ -66,5 +66,4 @@ npm run preview
 
 - **Website:** [brunagodoimachado.dev](https://brunagodoimachado.dev)
 - **LinkedIn:** [linkedin.com/in/brunagodoimachado](https://linkedin.com/in/brunagodoimachado)
-- **GitHub:** [github.com/brunagodoimachado](https://github.com/brunagodoimachado)
 - **Email:** [bgodoimachado@gmail.com](mailto:bgodoimachado@gmail.com)
