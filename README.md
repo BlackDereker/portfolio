@@ -1,6 +1,6 @@
 # Bruna Godoi Machado — Portfolio & Engineering Showcase
 
-[![Live Site](https://img.shields.io/badge/Live_Site-brunagodoi.pages.dev-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://brunagodoi.pages.dev)
+[![Live Site](https://img.shields.io/badge/Live_Site-brunagodoi.vercel.app-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://brunagodoi.vercel.app)
 [![Astro](https://img.shields.io/badge/Astro-v5-bc52ee?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -64,6 +64,6 @@ npm run preview
 
 ## 📬 Contact & Connect
 
-- **Website:** [brunagodoi.pages.dev](https://brunagodoi.pages.dev)
+- **Website:** [brunagodoi.vercel.app](https://brunagodoi.vercel.app)
 - **LinkedIn:** [linkedin.com/in/brunagodoimachado](https://linkedin.com/in/brunagodoimachado)
 - **Email:** [bgodoimachado@gmail.com](mailto:bgodoimachado@gmail.com)

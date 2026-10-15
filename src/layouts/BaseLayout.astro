@@ -124,6 +124,30 @@ const speculationRules = {
     <link rel="alternate" hreflang="pt-BR" href={ptUrl} />
     <link rel="alternate" hreflang="x-default" href={enUrl} />
 
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={PROFILE.name} />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="image" property="og:image" content={ogImageUrl} />
+    <meta property="og:image:secure_url" content={ogImageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${PROFILE.name} - ${seoTitle}`} />
+    <meta property="og:locale" content={locale === 'pt' ? 'pt_BR' : 'en_US'} />
+    <meta
+      property="og:locale:alternate"
+      content={locale === 'pt' ? 'en_US' : 'pt_BR'}
+    />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seoTitle} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <!-- Favicon & Sitemap -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap.xml" />
@@ -203,30 +227,6 @@ const speculationRules = {
       }
     `}
     />
-
-    <!-- OpenGraph Metadata -->
-    <meta property="og:type" content="profile" />
-    <meta property="og:site_name" content={PROFILE.name} />
-    <meta property="og:title" content={seoTitle} />
-    <meta property="og:description" content={seoDescription} />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:image" content={ogImageUrl} />
-    <meta property="og:image:secure_url" content={ogImageUrl} />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content={`${PROFILE.name} - ${seoTitle}`} />
-    <meta property="og:locale" content={locale === 'pt' ? 'pt_BR' : 'en_US'} />
-    <meta
-      property="og:locale:alternate"
-      content={locale === 'pt' ? 'en_US' : 'pt_BR'}
-    />
-
-    <!-- Twitter / X Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={seoTitle} />
-    <meta name="twitter:description" content={seoDescription} />
-    <meta name="twitter:image" content={ogImageUrl} />
 
     <!-- Light-First Editorial Default (Optional Carbon Dark Mode) -->
     <script is:inline>

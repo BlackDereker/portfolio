@@ -74,7 +74,7 @@ export interface LanguageProficiency {
 }
 
 export const SITE_URL =
-  import.meta.env?.PUBLIC_SITE_URL || 'https://brunagodoi.pages.dev';
+  import.meta.env?.PUBLIC_SITE_URL || 'https://brunagodoi.vercel.app';
 
 export const PROFILE = {
   name: 'Bruna Godoi Machado',
