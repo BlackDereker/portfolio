@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#faf9f6"/>
+  <line x1="80" y1="90" x2="1120" y2="90" stroke="#e4e2dd" stroke-width="1.5"/>
+  <line x1="80" y1="395" x2="1120" y2="395" stroke="#e4e2dd" stroke-width="1.5"/>
+  <line x1="80" y1="540" x2="1120" y2="540" stroke="#e4e2dd" stroke-width="1.5"/>
+
+  <text x="80" y="68" fill="#73716b" font-family="monospace" font-size="15">SÃO PAULO, BRAZIL · REMOTE / HYBRID / RELOCATION</text>
+
+  <text x="80" y="195" fill="#111111" font-family="Georgia, serif" font-size="68" letter-spacing="-1.5">Bruna Godoi Machado</text>
+  <text x="80" y="250" fill="#3f3e3a" font-family="sans-serif" font-size="25" font-weight="500">Senior Software Engineer — Backend &amp; Cloud Architecture · Go · Python · Applied AI/ML</text>
+
+  <text x="80" y="315" fill="#73716b" font-family="sans-serif" font-size="20">6+ years architecting low-latency microservices, AWS/GCP infrastructure, FinOps governance,</text>
+  <text x="80" y="346" fill="#73716b" font-family="sans-serif" font-size="20">and production Deep Learning &amp; multimodal AI pipelines.</text>
+
+  <g transform="translate(80, 445)">
+    <text x="0" y="0" fill="#111111" font-family="Georgia, serif" font-size="40">$24,000+/yr</text>
+    <text x="0" y="32" fill="#73716b" font-family="sans-serif" font-size="15">AI FinOps Cloud Savings</text>
+
+    <line x1="255" y1="-35" x2="255" y2="45" stroke="#e4e2dd" stroke-width="1.5"/>
+    <text x="285" y="0" fill="#111111" font-family="Georgia, serif" font-size="40">30s → &lt;500ms</text>
+    <text x="285" y="32" fill="#73716b" font-family="sans-serif" font-size="15">Async AdTech Latency</text>
+
+    <line x1="565" y1="-35" x2="565" y2="45" stroke="#e4e2dd" stroke-width="1.5"/>
+    <text x="595" y="0" fill="#111111" font-family="Georgia, serif" font-size="40">95%+ AI</text>
+    <text x="595" y="32" fill="#73716b" font-family="sans-serif" font-size="15">Gemini Brand Safety</text>
+
+    <line x1="815" y1="-35" x2="815" y2="45" stroke="#e4e2dd" stroke-width="1.5"/>
+    <text x="845" y="0" fill="#111111" font-family="Georgia, serif" font-size="40">99.99% SLA</text>
+    <text x="845" y="32" fill="#73716b" font-family="sans-serif" font-size="15">Go Microservices Uptime</text>
+  </g>
+
+  <text x="80" y="582" fill="#73716b" font-family="monospace" font-size="15">bgodoimachado@gmail.com · linkedin.com/in/brunagodoimachado · github.com/brunagodoimachado</text>
+</svg>

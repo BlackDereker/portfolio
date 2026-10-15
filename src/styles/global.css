@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Newsreader Variable", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  color-scheme: light;
+  --bg-page: #faf9f6;
+  --bg-subtle: #f3f1ec;
+  --ink-primary: #111111;
+  --ink-secondary: #3f3e3a;
+  --ink-muted: #73716b;
+  --rule-color: #e4e2dd;
+  --rule-strong: #111111;
+}
+
+html.dark {
+  color-scheme: dark;
+  --bg-page: #0e0e10;
+  --bg-subtle: #161619;
+  --ink-primary: #f2f0eb;
+  --ink-secondary: #b8b5ad;
+  --ink-muted: #7c7972;
+  --rule-color: #242428;
+  --rule-strong: #f2f0eb;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--ink-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--ink-primary);
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+  font-feature-settings: "liga" 1, "kern" 1, "onum" 1;
+}
+
+.editorial-rule-t {
+  border-top: 1px solid var(--rule-color);
+}
+
+.editorial-rule-b {
+  border-bottom: 1px solid var(--rule-color);
+}
+
+.editorial-link {
+  text-decoration: underline;
+  text-decoration-color: var(--rule-color);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.editorial-link:hover {
+  text-decoration-color: var(--ink-primary);
+  color: var(--ink-primary);
+}
+
+:focus-visible {
+  outline: 1.5px solid var(--ink-primary);
+  outline-offset: 3px;
+}
+
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt !important;
+    line-height: 1.42 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  article, section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #000000 !important;
+  }
+}

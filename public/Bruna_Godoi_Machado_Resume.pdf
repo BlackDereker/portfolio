@@ -1,0 +1,157 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5107 >>
+stream
+BT
+/F2 16 Tf
+1 0 0 1 42 795.0 Tm
+(BRUNA GODOI MACHADO) Tj
+/F2 10 Tf
+1 0 0 1 42 775.0 Tm
+(Senior Software Engineer | Backend & Cloud Architecture | Go - Python - Applied AI/ML) Tj
+/F1 9 Tf
+1 0 0 1 42 761.0 Tm
+(Sao Paulo, SP, Brazil \(Available for Remote, Hybrid, and Relocation opportunities\)) Tj
+/F1 9 Tf
+1 0 0 1 42 749.0 Tm
+(Email: bgodoimachado@gmail.com | Phone / WhatsApp: +55 \(11\) 95657-2790) Tj
+/F1 9 Tf
+1 0 0 1 42 737.0 Tm
+(LinkedIn: linkedin.com/in/brunagodoimachado | GitHub: github.com/brunagodoimachado) Tj
+/F2 11 Tf
+1 0 0 1 42 719.0 Tm
+(PROFESSIONAL SUMMARY) Tj
+/F1 9 Tf
+1 0 0 1 42 705.0 Tm
+(Senior Software Engineer with 6+ years of experience architecting high-throughput, low-latency) Tj
+/F1 9 Tf
+1 0 0 1 42 694.0 Tm
+(microservices, scalable cloud infrastructure \(AWS/GCP\), and production-grade AI/ML pipelines.) Tj
+/F1 9 Tf
+1 0 0 1 42 683.0 Tm
+(Combines hands-on technical leadership with a strong FinOps discipline to optimize cloud costs and) Tj
+/F1 9 Tf
+1 0 0 1 42 672.0 Tm
+(resolve complex performance bottlenecks--ranging from legacy analytical database migrations to training) Tj
+/F1 9 Tf
+1 0 0 1 42 661.0 Tm
+(proprietary deep learning engines that eliminated recurring third-party vendor expenses.) Tj
+/F2 11 Tf
+1 0 0 1 42 645.0 Tm
+(TECHNICAL SKILLS) Tj
+/F1 9 Tf
+1 0 0 1 42 631.0 Tm
+(- Languages: Go \(Golang\), Python \(FastAPI, Django, Flask\), TypeScript, JavaScript, SQL.) Tj
+/F1 9 Tf
+1 0 0 1 42 620.0 Tm
+(- Cloud, DevOps & Observability: AWS \(ECS, ECR, S3\), GCP, Docker, Kubernetes, Terraform, ArgoCD, Datadog, CI/CD.) Tj
+/F1 9 Tf
+1 0 0 1 42 609.0 Tm
+(- AI & Machine Learning: LLMs \(Google Gemini\), Deep Learning \(CNN, LSTM, Transformers\), NLP, PyTorch, TensorFlow, Keras.) Tj
+/F1 9 Tf
+1 0 0 1 42 598.0 Tm
+(- Databases & Streaming: PostgreSQL, MySQL, MongoDB, Redis, Apache Kafka, RabbitMQ, Databricks.) Tj
+/F1 9 Tf
+1 0 0 1 42 587.0 Tm
+(- Architecture & Engineering: High-Concurrency Microservices, REST & gRPC APIs, Platform Engineering \(React\), FinOps, TDD.) Tj
+/F2 11 Tf
+1 0 0 1 42 571.0 Tm
+(PROFESSIONAL EXPERIENCE) Tj
+/F2 9.5 Tf
+1 0 0 1 42 557.0 Tm
+(Wildlife Studios | L4 Backend Engineer \(September 2025 - June 2026 | Sao Paulo, Brazil - Remote/Hybrid\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 545.0 Tm
+(- High-Concurrency Go Microservices: Low-latency Go services integrating React developer portals and Unity SDKs.) Tj
+/F1 8.5 Tf
+1 0 0 1 42 534.5 Tm
+(- AI-Driven FinOps & Cost Optimization: Automated AI auditing across Databricks & Datadog \($24,000+/year saved\).) Tj
+/F1 8.5 Tf
+1 0 0 1 42 524.0 Tm
+(- Developer Experience \(DX\) & Reliability: Streamlined multi-studio deployment workflows with 99.99% uptime SLA.) Tj
+/F2 9.5 Tf
+1 0 0 1 42 511.0 Tm
+(Globo | Senior Software Engineer \(November 2023 - August 2025 | Sao Paulo, Brazil\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 499.0 Tm
+(- AdTech Architecture & High Throughput: Scaled media ingestion & validation pipelines for millions of daily payloads.) Tj
+/F1 8.5 Tf
+1 0 0 1 42 488.5 Tm
+(- Asynchronous Architecture: Refactored validation flows into event-driven async architecture \(30s -> <500ms latency\).) Tj
+/F1 8.5 Tf
+1 0 0 1 42 478.0 Tm
+(- Multimodal AI & Brand Safety: Integrated Google Gemini multimodal models automating 95%+ of brand safety moderation.) Tj
+/F1 8.5 Tf
+1 0 0 1 42 467.5 Tm
+(- Real-Time Distribution: High-availability distributed integrations linking live streaming with Google Ads API.) Tj
+/F2 9.5 Tf
+1 0 0 1 42 454.5 Tm
+(Idwall | Software Engineer II \(April 2022 - October 2023 | Sao Paulo, Brazil\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 442.5 Tm
+(- Proprietary Deep Learning Engine: In-house CNN/LSTM CAPTCHA neural engine \(90%+ accuracy, ~95% API cost cut\).) Tj
+/F1 8.5 Tf
+1 0 0 1 42 432.0 Tm
+(- Zero-Downtime Database Migration: Migrated critical user entity data from Databricks to PostgreSQL \(<10ms lookups\).) Tj
+/F1 8.5 Tf
+1 0 0 1 42 421.5 Tm
+(- Anti-Fraud Backend Scalability: Optimized mission-critical Python microservices for digital identity verification.) Tj
+/F2 9.5 Tf
+1 0 0 1 42 408.5 Tm
+(Globant | Python Developer \(October 2021 - April 2022 | Sao Paulo, Brazil\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 396.5 Tm
+(- Enterprise Backend Engineering & QA: Scalable Python microservices & CI/CD workflows \(>85% unit test coverage\).) Tj
+/F2 9.5 Tf
+1 0 0 1 42 383.5 Tm
+(Mutant | Software Developer \(Promoted from Junior\) \(March 2020 - October 2021 | Sao Paulo, Brazil\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 371.5 Tm
+(- Scalable Web Services, NLP TTS Models \(Docker/AWS/Azure\) & Bitbucket CI/CD Automation \(deploys from hours to <15m\).) Tj
+/F2 11 Tf
+1 0 0 1 42 356.5 Tm
+(EDUCATION & LANGUAGES) Tj
+/F1 8.5 Tf
+1 0 0 1 42 343.5 Tm
+(- MBA in Software Engineering | USP / ESALQ \(2024 - 2026\) - Enterprise Architecture & Distributed Systems) Tj
+/F1 8.5 Tf
+1 0 0 1 42 333.0 Tm
+(- Postgraduate Specialization in Artificial Intelligence | Mackenzie Presbyterian University \(2022 - 2023\)) Tj
+/F1 8.5 Tf
+1 0 0 1 42 322.5 Tm
+(- B.S. in Computer Science | Mackenzie Presbyterian University \(2018 - 2021\)) Tj
+/F2 8.5 Tf
+1 0 0 1 42 312.0 Tm
+(- Languages: Portuguese \(Native\) | English \(Full Professional / Fluent\)) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000005410 00000 n 
+0000005480 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5555
+%%EOF

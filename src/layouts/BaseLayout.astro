@@ -1,0 +1,262 @@
+---
+import interLatinWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import interLatinExtWoff2 from '@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2?url';
+import newsreaderLatinWoff2 from '@fontsource-variable/newsreader/files/newsreader-latin-opsz-normal.woff2?url';
+import newsreaderLatinExtWoff2 from '@fontsource-variable/newsreader/files/newsreader-latin-ext-opsz-normal.woff2?url';
+import jetbrainsLatinWoff2 from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
+import jetbrainsLatinExtWoff2 from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-ext-wght-normal.woff2?url';
+import '../styles/global.css';
+import {
+  PROFILE,
+  EXPERIENCES,
+  EDUCATION,
+  SKILL_GROUPS,
+  SITE_URL,
+  type Locale,
+} from '../data/portfolio';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+
+const canonicalPath = locale === 'pt' ? '/pt/' : '/';
+const canonicalUrl = new URL(canonicalPath, SITE_URL).toString();
+const enUrl = new URL('/', SITE_URL).toString();
+const ptUrl = new URL('/pt/', SITE_URL).toString();
+const ogImageUrl = new URL('/og-image.png', SITE_URL).toString();
+
+const seoTitle = PROFILE.seo[locale].title;
+const seoDescription = PROFILE.seo[locale].description;
+const htmlLang = locale === 'pt' ? 'pt-BR' : 'en';
+
+const allSkills = SKILL_GROUPS.flatMap((group) =>
+  group.skills.map((s) => s.name)
+);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfilePage',
+      '@id': `${canonicalUrl}#profilepage`,
+      url: canonicalUrl,
+      name: seoTitle,
+      description: seoDescription,
+      inLanguage: htmlLang,
+      mainEntity: {
+        '@id': `${SITE_URL}/#person`,
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${SITE_URL}/#person`,
+      name: PROFILE.name,
+      jobTitle:
+        locale === 'pt'
+          ? 'Engenheira de Software Sênior | Backend, Cloud & IA/ML'
+          : 'Senior Software Engineer | Backend, Cloud & Applied AI/ML',
+      description: PROFILE.summary[locale].join(' '),
+      email: `mailto:${PROFILE.email}`,
+      telephone: PROFILE.phoneE164,
+      url: SITE_URL,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'São Paulo',
+        addressRegion: 'SP',
+        addressCountry: 'BR',
+      },
+      sameAs: [PROFILE.linkedinUrl, PROFILE.githubUrl],
+      knowsAbout: allSkills,
+      knowsLanguage: [
+        {
+          '@type': 'Language',
+          name: 'Portuguese',
+          alternateName: 'pt-BR',
+        },
+        {
+          '@type': 'Language',
+          name: 'English',
+          alternateName: 'en',
+        },
+      ],
+      alumniOf: EDUCATION.map((edu) => ({
+        '@type': 'CollegeOrUniversity',
+        name: edu.institution,
+      })),
+      worksFor: {
+        '@type': 'Organization',
+        name: EXPERIENCES[0].company,
+      },
+    },
+  ],
+};
+
+const speculationRules = {
+  prerender: [
+    {
+      source: 'list',
+      urls: ['/', '/pt/'],
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{seoTitle}</title>
+    <meta name="description" content={seoDescription} />
+    <meta name="author" content={PROFILE.name} />
+    <meta
+      name="keywords"
+      content="Bruna Godoi Machado, Senior Software Engineer, Backend Engineer, Go, Golang, Python, Cloud Architecture, AWS, GCP, Applied AI, Machine Learning, FinOps, Distributed Systems, São Paulo, Brazil"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#faf9f6" />
+
+    <!-- Canonical & Bilingual Hreflang Alternates -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="pt-BR" href={ptUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+
+    <!-- Favicon & Sitemap -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap.xml" />
+
+    <!-- Preload Self-Hosted Variable Fonts (Zero CLS, Zero External DNS) -->
+    <link
+      rel="preload"
+      href={newsreaderLatinWoff2}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href={interLatinWoff2}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href={jetbrainsLatinWoff2}
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <style
+      is:inline
+      set:html={`
+      @font-face {
+        font-family: 'Newsreader Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 200 800;
+        src: url('${newsreaderLatinWoff2}') format('woff2-variations');
+        unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+      }
+      @font-face {
+        font-family: 'Newsreader Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 200 800;
+        src: url('${newsreaderLatinExtWoff2}') format('woff2-variations');
+        unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+      }
+      @font-face {
+        font-family: 'Inter Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 100 900;
+        src: url('${interLatinWoff2}') format('woff2-variations');
+        unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+      }
+      @font-face {
+        font-family: 'Inter Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 100 900;
+        src: url('${interLatinExtWoff2}') format('woff2-variations');
+        unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 100 800;
+        src: url('${jetbrainsLatinWoff2}') format('woff2-variations');
+        unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+      }
+      @font-face {
+        font-family: 'JetBrains Mono Variable';
+        font-style: normal;
+        font-display: swap;
+        font-weight: 100 800;
+        src: url('${jetbrainsLatinExtWoff2}') format('woff2-variations');
+        unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+      }
+    `}
+    />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content={PROFILE.name} />
+    <meta property="og:title" content={seoTitle} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:secure_url" content={ogImageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${PROFILE.name} - ${seoTitle}`} />
+    <meta property="og:locale" content={locale === 'pt' ? 'pt_BR' : 'en_US'} />
+    <meta
+      property="og:locale:alternate"
+      content={locale === 'pt' ? 'en_US' : 'pt_BR'}
+    />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seoTitle} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Light-First Editorial Default (Optional Carbon Dark Mode) -->
+    <script is:inline>
+      (function () {
+        try {
+          const saved = localStorage.getItem('theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+
+    <!-- Speculation Rules API for Instant Bilingual Navigation -->
+    <script
+      type="speculationrules"
+      is:inline
+      set:html={JSON.stringify(speculationRules)}
+    />
+
+    <!-- Rich JSON-LD Structured Data for Google & AI Search -->
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(jsonLd)}
+    />
+  </head>
+  <body class="min-h-screen antialiased">
+    <slot />
+  </body>
+</html>
