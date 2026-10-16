@@ -234,6 +234,12 @@ const speculationRules = {
       inject();
     </script>
 
+    <!-- Vercel Speed Insights -->
+    <script>
+      import { injectSpeedInsights } from '@vercel/speed-insights';
+      injectSpeedInsights();
+    </script>
+
     <!-- Light-First Editorial Default (Optional Carbon Dark Mode) -->
     <script is:inline>
       (function () {
