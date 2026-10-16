@@ -14,6 +14,7 @@ import {
   SITE_URL,
   type Locale,
 } from '../data/portfolio';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   locale?: Locale;
@@ -235,10 +236,7 @@ const speculationRules = {
     </script>
 
     <!-- Vercel Speed Insights -->
-    <script>
-      import { injectSpeedInsights } from '@vercel/speed-insights';
-      injectSpeedInsights();
-    </script>
+    <SpeedInsights />
 
     <!-- Light-First Editorial Default (Optional Carbon Dark Mode) -->
     <script is:inline>
